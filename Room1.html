@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.rectangle{
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+  background-color: #30FF6E;
+  float:left;
+}
+
+.rectangle:hover {
+  background-color: #3FFFB2;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Une salle de la DGNSI</h2>
+<div class="group">
+	<div class="rectangle" onclick="this.style.backgroundColor = 'red';"></div>
+
+	<div class="rectangle"></div>
+
+	<div class="rectangle"></div>
+	
+	<div class="rectangle"></div>
+</div>
+
+<div class="group">
+	<div class="rectangle"></div>
+
+	<div class="rectangle"></div>
+
+	<div class="rectangle"></div>
+	
+	<div class="rectangle"></div>
+</div>
+
+<a href=Page2.html>Go to page 2</a>
+
+</body>
+</html> 
